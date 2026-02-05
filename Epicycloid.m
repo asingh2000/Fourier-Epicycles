@@ -1,5 +1,5 @@
 % Handling the input image
-Input='https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Greek_lc_pi.svg/1024px-Greek_lc_pi.svg.png'
+Input='Pi-symbol.svg.png'
 img=imread(Input);
 % img=imrotate(img,-90,'bilinear');
 % imshow(img);
@@ -34,7 +34,7 @@ for j=1:2*m+1
 end
 
 % Plotting the Epicycloid
-Output='D:\Contour.avi'
+Output='Contour.avi'
 w=VideoWriter(Output);
 w.FrameRate=5;
 open(w);
@@ -78,6 +78,7 @@ for ind=1:length(t)
     rnew=r(2*m+1);
 end
 close(w);
+
 
 
 
